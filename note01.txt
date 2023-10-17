@@ -1,0 +1,345 @@
+Tun Zarni Kyaw
+2000 Aug - MCC
+2005 -
+2014 - 
+2018 - 
+C/C++, C#, Java, PHP, VB, Python, JavaScript
+
+Programming
+C/C++
+C# 
+Java
+
+Text Editors
+========
+Notepad
+Notepad++
+Sublime Text
+Visual Studio Code (VS Code)
+
+IDE - Integrated Development Environment
+============================
+PyCharm
+
+
+
+Python Comment
+ # hash
+
+C# Java	&&  ||  !
+
+
+VSCode Terminal Shortcut ==> 
+	Ctrl + `	
+
+
+input() 	Function
+============
+print()
+type()
+int()
+
+:	Colon
+
+if
+else
+True
+False
+and
+or
+not
+
+
+if Syntax
+======
+if condition:
+	True statement(s)
+else:
+	False statement(s)
+
+
+
+if elif else Syntax
+===========
+if condition:
+	True statement(s)
+[elif condition:
+	True statement(s)]
+else:
+	False statement(s)
+
+
+
+
+
+>python P10.py
+Enter a number: 12
+EVEN
+
+>python P10.py
+Enter a number: 13
+ODD
+
+0 2 4 6 8 
+1 3 5 7 9 
+
+
+>python P11.py
+Enter a number: 6
+POSITIVE
+
+>python P11.py
+Enter a number: -2
+NEGATIVE
+
+>python P11.py
+Enter a number: 0
+ZERO
+
+
+>python P12.py
+Enter mark: 50
+PASS
+
+>pyton P12.py
+Enter mark: 20
+FAIL
+
+
+
+>= 80 	DISTINCTION
+40~79	PASS
+<40	FAIL
+
+
+Mark	Grade
+100	A*
+80~99	A
+60~79	B
+40~59	C
+<40	D
+
+
+>python P15.py
+Enter an acronym: WWW
+World Wide Web
+
+
+WWW	World Wide Web
+USB	Universal Serial Bus
+CPU	Central Processing Unit
+RAM	Random Access Memory
+OS	Operating System
+	Unknown Acronym
+
+hard-coded
+
+
+Loop / Iteration / Repetition
+
+
+
+range() Function
+===========
+
+range( stop )
+range( start, stop )
+range( start, stop, step )
+
+range(3)		0, 1, 2
+range(5)		0, 1, 2, 3, 4
+range(1, 3)	1, 2
+range(1, 5)	1, 2, 3, 4
+range(10, 15)	10, 11, 12, 13, 14
+range(5, 0, -1)	5, 4, 3, 2, 1
+range(10, 50, 5)	10, 15, 20, 25, 30, 35, 40, 45
+
+
+Null / Empty / Blank String
+
+
+for Loop Syntax
+==========
+
+for <<var>> in <<iterable>>:
+	statement(s)
+else:
+	statement(s)
+
+
+Built-in Function
+==========
+print(), input(), range(), int(), type()
+
+
+
+randint() Function
+============
+>>>
+import random
+x = random.randint(1, 6)
+print(x)
+
+>>>
+from random import randint
+x = randint(1, 6)
+print(x)
+
+
+
+
+while Loop Syntax
+============
+while <<condition>>:
+	statement(s)
+else:
+	statement(s)
+
+
+Syntax
+Logic
+
+CLI	- Command Line Interface
+
+Number Guessing Game
+
+45	LARGE
+7	SMALL
+23	SMALL
+36	SMALL
+35	SMALL
+40	SMALL
+60	LARGE
+41	SMALL
+42	SMALL
+44	LARGE
+
+P30NumberGuessingGame.py
+
+Count!
+Game Over! 
+Play Again? [Y/N]: 
+
+
+Syntax
+
+
+>python P44.py
+Enter your password: abc
+Weak Password
+
+>python P44.py
+Enter your password: abc123
+Medium Password
+
+>python P44.py
+Enter your password: abc123!@#
+Strong Passwrod
+
+P@55w0rd
+
+s.isalpha()	
+s.isdigit()		
+
+s = "abc123"
+
+s.isalpha() or s.isdigit()	=> True
+
+
+>python P45.py
+Enter your name: Tun Zarni Kyaw
+Your initial is TZK
+
+>python P45.py
+Enter your name: Ye Htet
+Your initial is YH
+
+
+Program Constructs
+=============
+* Sequence
+* Selection
+* Iteration
+
+Functions
+=======
+def
+
+
+AJS	1
+BKT	2
+CLU	3
+DMV	4
+ENW	5
+FOX	6
+GPY	7
+HQZ	8
+IR	9
+
+TUN
+2+3+5 = 10 = 1
+
+YE HTET
+7+5 + 8+2+5+2 = 29 = 11 = 2
+
+THANT SIN HTET
+2+8+1+5+2 + 1+9+5 + 8+2+5+2 = 50 = 5
+
+1	Confident
+2	Gentle
+3	Active
+4	Clever
+5	Intelligent
+6	Optimistic
+7	Introvert
+8	Kind
+9	Artistic
+
+
+4+5+6+7+8+9 = 9992 = 29 = 11 = 2
+
+
+ValueError
+ZeroDivisionError
+
+
+Errors
+====
+1. Syntax
+2. Runtime / Exception
+3. Logic / Bug
+
+
+Error/Exception Handling 
+================
+try:
+	statement(s)
+[except <<Exception>>:
+	statement(s) ]
+except:
+	statement(s)
+[else:
+	statement(s)]
+[finally:
+	statement(s)]
+
+
+1. Install (Microsoft)Python Extension in VSCode
+2. Run > Toggle Breakpoint 
+3. <Run and Debug>
+4. Run > Step Over [F10]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
