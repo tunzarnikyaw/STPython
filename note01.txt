@@ -341,10 +341,13 @@ Google drive
 Github
 
 
+x = 123
+print( type( x ) )	# <class 'int'>
+
+x = Count()
 
 
-
-
+Distance
 
 
 

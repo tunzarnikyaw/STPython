@@ -19,6 +19,24 @@ class Card:
 
         return self.suit + snumber
 
+    def suit_value(self):
+        if self.suit == "♠":
+            return 4
+        elif self.suit == "♥":
+            return 3
+        elif self.suit == "♦":
+            return 2
+        # if self.suit == "♣":
+        else:
+            return 1
+
+    def is_greater_than(self, other):
+        if self.number > other.number:
+            return True
+        elif self.number == other.number:
+            if self.suit_value() > other.suit_value():
+                return True
+        return False
 
 
 class Player:
@@ -34,6 +52,31 @@ class Player:
         for c in self.cards:
             cs += c.get() + " "
         return cs
+    
+    def total(self):
+        t = 0
+        for c in self.cards:
+            if c.number in [11, 12, 13]:
+                t += 10
+            elif c.number == 14:
+                t += 1
+            else: 
+                t += c.number
+        t = t % 10
+        return t
+
+    def card_count(self):
+        return len(self.cards)
+
+    def max_card(self):
+        max = self.cards[0]
+        for x in range(1, len(self.cards)):
+            if self.cards[x].number > max.number:
+                max = self.cards[x]
+            elif self.cards[x].number == max.number:
+                if self.cards[x].suit_value() > max.suit_value():
+                    max = self.cards[x]
+        return max
 
 
 suits = ["♠", "♥", "♦", "♣"]
@@ -58,15 +101,40 @@ human = Player("Player 1", [])
 
 computer.draw(cards[0])
 computer.draw(cards[1])
+# computer.draw(Card("♦", 14))    # test
+# computer.draw(Card("♠", 5))    # test
 print(computer.name)
 print(computer.show_cards())
 
 human.draw(cards[2])
 human.draw(cards[3])
+# human.draw(Card("♠", 14))   # test
+# human.draw(Card("♦", 5))   # test
 print(human.name)
 print(human.show_cards())
+
+# check for autos
 
 draw_another_card = input("Draw?[Y/N]: ")
 if draw_another_card == "Y":
     human.draw(cards[4])
     print(human.show_cards())
+
+# total > total
+# card count < card  count
+# suit+number > suit+number
+
+if computer.total() > human.total():
+    print("Computer wins!")
+elif computer.total() == human.total():
+    if computer.card_count() < human.card_count():
+        print("Computer wins")
+    elif computer.card_count() == human.card_count():
+        if computer.max_card().is_greater_than(human.max_card()):
+            print("Computer wins!")
+        else:
+            print("Player wins!")
+    else:
+        print("Player wins")
+else:
+    print("Player wins!")
