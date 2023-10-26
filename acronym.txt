@@ -1,0 +1,9 @@
+WWW=World Wide Web
+USB=Universal Serial Bus
+CPU=Central Processing Unit
+RAM=Random Access Memory
+OS=Operating System
+HTML=Hyper Text Markup Language
+JSON=JavaScript Object Notation
+XML=Extensible Markup Language
+GUI=Graphical User Interface

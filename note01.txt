@@ -350,6 +350,53 @@ x = Count()
 Distance
 
 
+import <<module name>>
+from <<module name>> import <<class/function/... name>>
+from <<module name>> import <<class/function/... name>> as <<alias>>
+
+import random
+print(random.randint(1,2))
+
+from random import randint
+print( randint(3,4) )
+
+from random import randint as test
+print( test(5,6) )
+
+
+
+# Inheritance
+=========
+class ClassA:
+    def funcA(self):
+        print("This is funcA()")
+
+
+class ClassB(ClassA):
+    pass
+
+
+ClassA		ClassB
+--------		--------
+Parent		Child
+Base		Derived
+Super		Sub
+
+
+
+strip()	# trim()
+
+CLI	Command Line Interface / Console Application
+GUI	Graphical User Interface (Windows/Desktop/Mobile Application)
+
+Web	Web Interface (Web Application)
+Menu	Menu Interface
+Expert	Expert System Interface
+
+
+
+
+
 
 
 
