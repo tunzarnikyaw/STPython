@@ -395,6 +395,112 @@ Expert	Expert System Interface
 
 
 
+Unit Testing
+Integration Testing
+(User) Acceptance Testing (UAT)
+
+
+Black Box Testing
+White Box Testing
+
+
+
+Test Plan
+======
+No.	Input Data	Action	Expected Result
+===	=======	====	==========
+(Normal Data)
+1	50		-	PASS
+2	90		-	DISTINCTION
+3	20		-	FAIL
+(Invalid Data)
+4	120		-	INVALID DATA
+5	-5		-	INVALID DATA
+6	asdf		- 	INVALID DATA
+	39.5		-	INVALID DATA
+(Boundary Data)
+7	39		-	FAIL
+8	40		- 	PASS
+9	41		- 	PASS
+10	79		-	PASS
+11	80		-	DISTINCTION
+12	81		-	DISTINCTION
+13	0		-	FAIL
+14	-1		-	INVALID DATA
+15	100		-	DISTINCTION
+16	101		-	INVALID DATA
+
+
+
+Test Result
+========
+No.	Input Data	Action	Expected Result	Actual Result	Remark
+===	=======	====	==========	========	=====
+(Normal Data)
+1	50		-	PASS		Same as Expected	OK
+2	90		-	DISTINCTION	Same as Expected	OK
+3	20		-	FAIL		Same as Expected	OK
+(Invalid Data)
+4	120		-	INVALID DATA	DISTINCTION 	????
+5	-5		-	INVALID DATA	FAIL		????
+6	asdf		- 	INVALID DATA	ValueError:	????
+	39.5		-	INVALID DATA	ValueError:	????
+(Boundary Data)
+7	39		-	FAIL		Same as Expected	OK
+8	40		- 	PASS		FAIL		????
+9	41		- 	PASS		Same as Expected	OK
+10	79		-	PASS		Same as Expected	OK
+11	80		-	DISTINCTION	Same as Expected	OK
+12	81		-	DISTINCTION	Same as Expected	OK
+13	0		-	FAIL		Same as Expected	OK
+14	-1		-	INVALID DATA	FAIL		????
+15	100		-	DISTINCTION	Same as Expected	OK
+16	101		-	INVALID DATA	DISTINCTION	????
+
+
+Assignment 7
+
+class Roman:
+	def __init__(self, n):
+		self.number = n
+
+	def get(self):
+		if self.number == 1: return "I"
+		if self.number == 2: return "II"
+		if self.number == 3: return "III"
+		if self.number == 4: return "IV"
+		if self.number == 5: return "V"
+
+print( Roman(5) )
+
+9	IX
+10	X
+15	XV
+20	XX
+30	XXX
+40	XL
+50	L
+90	XC
+100	C
+500	D
+1000	M
+
+MMXXIII	2023
+
+
+Assignment 8
+
+f = open("data.txt", "r")
+
+datalist = []
+line = f.readline()
+while line != "":
+	datalist.append( line )
+	line = f.readline()
+
+
+
+
 
 
 
